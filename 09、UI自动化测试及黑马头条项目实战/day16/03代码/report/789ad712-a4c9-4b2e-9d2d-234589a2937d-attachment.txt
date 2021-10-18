@@ -1,0 +1,14 @@
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:50019/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:230 Starting new HTTP connection (1): 127.0.0.1:50019
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:442 http://127.0.0.1:50019 "POST /session HTTP/1.1" 200 720
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:50019/session/3d32a00d8d52bf619e00894567b45dfc/window/maximize {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:442 http://127.0.0.1:50019 "POST /session/3d32a00d8d52bf619e00894567b45dfc/window/maximize HTTP/1.1" 200 51
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:50019/session/3d32a00d8d52bf619e00894567b45dfc/url {"url": "http://ttmp.research.itcast.cn/"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:442 http://127.0.0.1:50019 "POST /session/3d32a00d8d52bf619e00894567b45dfc/url HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request
+[32mINFO    [0m root:test_publish_article.py:32 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 POST http://127.0.0.1:50019/session/3d32a00d8d52bf619e00894567b45dfc/element {"using": "xpath", "value": "//*[@placeholder='\u8bf7\u8f93\u5165\u624b\u673a\u53f7']"}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:442 http://127.0.0.1:50019 "POST /session/3d32a00d8d52bf619e00894567b45dfc/element HTTP/1.1" 200 88
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request

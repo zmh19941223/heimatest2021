@@ -1,0 +1,3 @@
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:388 DELETE http://127.0.0.1:50004/session/d68547b0aa71679598081277aa13e744 {}
+[35mDEBUG   [0m urllib3.connectionpool:connectionpool.py:442 http://127.0.0.1:50004 "DELETE /session/d68547b0aa71679598081277aa13e744 HTTP/1.1" 200 14
+[35mDEBUG   [0m selenium.webdriver.remote.remote_connection:remote_connection.py:440 Finished Request

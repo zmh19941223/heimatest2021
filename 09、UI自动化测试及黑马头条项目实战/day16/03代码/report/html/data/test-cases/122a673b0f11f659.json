@@ -1,0 +1,107 @@
+{
+  "uid" : "122a673b0f11f659",
+  "name" : "test_publish_article",
+  "fullName" : "scripts.mp.test_publish_article.TestPublishArticle#test_publish_article",
+  "historyId" : "a9043702b48e54250431ac4e5855384d",
+  "time" : {
+    "start" : 1594620486331,
+    "stop" : 1594620491705,
+    "duration" : 5374
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1594620478546,
+      "stop" : 1594620484872,
+      "duration" : 6326
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "fc2e115661235177",
+      "name" : "log",
+      "source" : "fc2e115661235177.txt",
+      "type" : "text/plain",
+      "size" : 12974
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_Class__pytest_setup_class::0",
+    "time" : {
+      "start" : 1594620491706,
+      "stop" : 1594620493897,
+      "duration" : 2191
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "scripts.mp"
+  }, {
+    "name" : "suite",
+    "value" : "test_publish_article"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPublishArticle"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-KQP6EJ3A"
+  }, {
+    "name" : "thread",
+    "value" : "15564-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "scripts.mp.test_publish_article"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "run(order=1)" ]
+  },
+  "source" : "122a673b0f11f659.json",
+  "parameterValues" : [ ]
+}

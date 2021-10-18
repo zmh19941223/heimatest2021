@@ -1,0 +1,13 @@
+P2P数据库：
+host：52.83.144.39
+port：3306 
+username: root 
+password: Itcast_p2p_20191228
+
+
+P2Pmock数据库：
+host：52.83.144.39
+port：3306 
+数据库名称：p2p_mock
+username: root 
+password: Itcast_p2p_20191228

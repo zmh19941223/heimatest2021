@@ -1,0 +1,40 @@
+1、安装过程中没有urllib3这个模块
+
+2、chrome浏览器的版本与chrome浏览器驱动的版本不一致
+
+3、chrome浏览器安装有问题，移动了chrome浏览器的应用程序目录 从C盘移到E盘
+
+4、chrome浏览器驱动没有复制到python安装的根目录下
+
+5、大家在创建项目时，用的是虚拟环境（包含venv目录），虚拟环境下找不到selenium模块
+
+
+
+6、By类写错，没法快捷导入写成  BY
+
+7、实例化驱动时没有括号   webdriver.Chrome或者第一个字母不是大写webdriver.chrome()
+
+8、xpath相对路径定位时用了隔代的关系
+
+9、快捷导包2017的快捷键是Ctrl+Alt+Space（空格），导入后不能重复导入
+
+10、导入的模块选择的不正确，time有些同学选成了datatime.time
+
+11、Keys导入时，K是大写，不是小写
+
+12、css的层级可以结合前面的所有选择器一起使用tag_name[attribute=value]>tag_name[attribute2=value]
+
+13、为什么要做CPU性能和内存性能的测试
+
+14、初始化配置  app包名和启动名是可以修改的。
+
+
+
+
+
+
+
+
+
+
+

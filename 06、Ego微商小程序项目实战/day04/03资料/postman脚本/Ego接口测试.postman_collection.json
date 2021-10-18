@@ -1,0 +1,642 @@
+{
+	"info": {
+		"_postman_id": "59e9f712-b387-4bb7-921a-188186d894e0",
+		"name": "Ego接口测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "首页",
+			"item": [
+				{
+					"name": "获取轮播图",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d76515b1-5559-4bce-a983-feefe9006db4",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"// 断言响应体\r",
+									"pm.test(\"Body is correct\", function () {\r",
+									"    pm.response.to.have.body({\r",
+									"    \"id\": 1,\r",
+									"    \"name\": \"首页置顶\",\r",
+									"    \"description\": \"首页轮播图\",\r",
+									"    \"update_time\": \"1970-01-01 08:00:00\",\r",
+									"    \"items\": [\r",
+									"        {\r",
+									"            \"key_word\": \"6\",\r",
+									"            \"type\": 1,\r",
+									"            \"update_time\": \"1970-01-01 08:00:00\",\r",
+									"            \"img\": {\r",
+									"                \"url\": \"http://www.myego.com:13140/images/banner-4a.png\",\r",
+									"                \"update_time\": \"1970-01-01 08:00:00\"\r",
+									"            }\r",
+									"        },\r",
+									"        {\r",
+									"            \"key_word\": \"25\",\r",
+									"            \"type\": 1,\r",
+									"            \"update_time\": \"1970-01-01 08:00:00\",\r",
+									"            \"img\": {\r",
+									"                \"url\": \"http://www.myego.com:13140/images/banner-2a.png\",\r",
+									"                \"update_time\": \"1970-01-01 08:00:00\"\r",
+									"            }\r",
+									"        },\r",
+									"        {\r",
+									"            \"key_word\": \"11\",\r",
+									"            \"type\": 1,\r",
+									"            \"update_time\": \"1970-01-01 08:00:00\",\r",
+									"            \"img\": {\r",
+									"                \"url\": \"http://www.myego.com:13140/images/banner-3a.png\",\r",
+									"                \"update_time\": \"1970-01-01 08:00:00\"\r",
+									"            }\r",
+									"        },\r",
+									"        {\r",
+									"            \"key_word\": \"21\",\r",
+									"            \"type\": 1,\r",
+									"            \"update_time\": \"1970-01-01 08:00:00\",\r",
+									"            \"img\": {\r",
+									"                \"url\": \"http://www.myego.com:13140/images/banner-5a.png\",\r",
+									"                \"update_time\": \"1970-01-01 08:00:00\"\r",
+									"            }\r",
+									"        },\r",
+									"        {\r",
+									"            \"key_word\": \"10\",\r",
+									"            \"type\": 1,\r",
+									"            \"update_time\": \"1970-01-01 08:00:00\",\r",
+									"            \"img\": {\r",
+									"                \"url\": \"http://www.myego.com:13140/images/banner-1a.png\",\r",
+									"                \"update_time\": \"1970-01-01 08:00:00\"\r",
+									"            }\r",
+									"        }\r",
+									"    ]\r",
+									"   });\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/banner/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"banner",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "专题栏位",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "eaf41d7e-043f-4354-9426-caaf37d74a37",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"// 使用json断言\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData[0].name).to.eql(\"专题栏位一\");\r",
+									"    pm.expect(jsonData[1].name).to.eql(\"专题栏位二\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/theme?ids=1,2,3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"theme"
+							],
+							"query": [
+								{
+									"key": "ids",
+									"value": "1,2,3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "最近新品",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "619ebcb7-c724-45fc-89d1-dfca6aac1a20",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/product/recent",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"recent"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "商品",
+			"item": [
+				{
+					"name": "商品分类列表",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "28420b29-d3c5-4e34-9f5d-309c4285bd1c",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/category/all",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "商品分类列表下的单个商品",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "94e77849-a58f-47fe-a7ea-c51ad771a1ac",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/product/by_category?id=2",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"by_category"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "商品详情",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5208591b-1905-4177-b764-1ad56b6b73d9",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// 断言文本格式响应体中，是否包含红袖枸杞 6克*3袋\r",
+									"pm.test(\"Your test name\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"红袖枸杞 6克*3袋\")\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/v1/product/4",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "用户",
+			"item": [
+				{
+					"name": "获取令牌（登录态）",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "876066bd-3745-4204-8459-b4f3a846beae",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"code\":\"013jOSYm00clfn1a8GWm0w1eIr3jOSYc\"}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/token/user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"token",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "令牌验证",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d9e282db-c372-4531-89df-c3368769cc52",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"token\":\"3b03ee17f069a8c623222ab7c23e30a7\"}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/token/verify",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"token",
+								"verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取地址信息",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3d9138ce-069f-40a5-95ad-ce96c5372abd",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "3b03ee17f069a8c623222ab7c23e30a7",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/address",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"address"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "添加地址",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "59d4906b-4735-4e78-915b-5d60fcca6def",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "3b03ee17f069a8c623222ab7c23e30a7",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"张四222\",\r\n    \"province\": \"广东省111\",\r\n    \"city\": \"广州市22\",\r\n    \"country\": \"海珠区22\",\r\n    \"mobile\": \"020-8116788822\",\r\n    \"detail\": \"新港中路397号22\"\r\n}"
+						},
+						"url": {
+							"raw": "http://www.myego.com:13140/api/v1/address",
+							"protocol": "http",
+							"host": [
+								"www",
+								"myego",
+								"com"
+							],
+							"port": "13140",
+							"path": [
+								"api",
+								"v1",
+								"address"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "订单",
+			"item": [
+				{
+					"name": "获取用户订单列表",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "87c6f5de-58c2-4272-b216-2ec1c7958e52",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "a3da0dba920a0112e46b012fe5c4899b",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/order/by_user?page=1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"order",
+								"by_user"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "创建订单",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "161d5228-82a6-4473-adba-2a92f5ce42df",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "a3da0dba920a0112e46b012fe5c4899b",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"products\": [\r\n        {\r\n            \"product_id\": 8,\r\n            \"count\": 1\r\n        },\r\n        {\r\n            \"product_id\": 10,\r\n            \"count\": 2\r\n        }\r\n    ]\r\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/v1/order",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查看订单",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6fe01700-484f-4d78-8337-714db2c42fa7",
+								"exec": [
+									"// 断言响应状态码\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "a3da0dba920a0112e46b012fe5c4899b",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/v1/order/109",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"order",
+								"109"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

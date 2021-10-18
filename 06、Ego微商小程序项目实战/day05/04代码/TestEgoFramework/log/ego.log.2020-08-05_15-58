@@ -1,0 +1,5 @@
+2020-08-05 15:57:04,183 INFO [root] [__init__.py(<module>:12)] - 测试在api下的__init__.py中的日志打印结果！
+2020-08-05 15:57:48,783 INFO [root] [__init__.py(<module>:12)] - 测试在api下的__init__.py中的日志打印结果！
+2020-08-05 15:57:49,132 INFO [root] [test_ego.py(test06_get_goods_detail:64)] - 获取商品详情接口的结果为：{'id': 32, 'name': '土豆 半斤', 'price': '0.01', 'stock': 999, 'main_img_url': 'http://www.myego.com:13140/images/product-vg@4.png', 'summary': None, 'img_id': 66, 'imgs': [], 'properties': []}
+2020-08-05 15:58:38,877 INFO [root] [__init__.py(<module>:12)] - 测试在api下的__init__.py中的日志打印结果！
+2020-08-05 15:58:39,184 INFO [root] [test_ego.py(test06_get_goods_detail:64)] - 获取商品详情接口的结果为：{'id': 32, 'name': '土豆 半斤', 'price': '0.01', 'stock': 999, 'main_img_url': 'http://www.myego.com:13140/images/product-vg@4.png', 'summary': None, 'img_id': 66, 'imgs': [], 'properties': []}

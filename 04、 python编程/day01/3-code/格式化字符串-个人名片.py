@@ -1,0 +1,11 @@
+company = input("请输入公司名称")
+name = input("请输入姓名")
+tel = input("请输入电话号码")
+mailbox = input("请输入邮箱地址")
+print("*" * 20)
+print("公司名称:%s" % company)
+print("姓名:%s" % name)
+print("电话:%s" % tel)
+print("邮箱:%s" % mailbox)
+print("*" * 20)
+

@@ -1,0 +1,37 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-KQP6EJ3A",
+    "children" : [ {
+      "name" : "15564-MainThread",
+      "children" : [ {
+        "name" : "test_login[13012345678-246810-test123]",
+        "uid" : "71d0674c71938b7d",
+        "parentUid" : "8f4c8b345c2373a428a13767a3423a5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594620484873,
+          "stop" : 1594620486325,
+          "duration" : 1452
+        },
+        "flaky" : false,
+        "parameters" : [ "'246810'", "'test123'", "'13012345678'" ]
+      }, {
+        "name" : "test_publish_article",
+        "uid" : "122a673b0f11f659",
+        "parentUid" : "8f4c8b345c2373a428a13767a3423a5f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1594620486331,
+          "stop" : 1594620491705,
+          "duration" : 5374
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8f4c8b345c2373a428a13767a3423a5f"
+    } ],
+    "uid" : "e00e180f2f484e377e74912bdec3aeaa"
+  } ]
+}

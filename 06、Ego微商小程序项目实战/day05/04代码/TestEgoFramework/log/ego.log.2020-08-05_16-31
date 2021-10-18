@@ -1,0 +1,4 @@
+2020-08-05 16:30:34,612 INFO [root] [__init__.py(<module>:12)] - 测试在api下的__init__.py中的日志打印结果！
+2020-08-05 16:30:34,936 INFO [root] [test_ego.py(test08_verify_token:89)] - 验证的结果为：{'isValid': True}
+2020-08-05 16:31:16,485 INFO [root] [__init__.py(<module>:12)] - 测试在api下的__init__.py中的日志打印结果！
+2020-08-05 16:31:16,739 INFO [root] [test_ego.py(test08_verify_token:89)] - 验证的结果为：{'isValid': True}

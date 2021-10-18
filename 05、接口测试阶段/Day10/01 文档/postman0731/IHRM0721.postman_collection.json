@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "cad04f39-fab7-4a22-bfc4-1521326732c5",
+		"name": "IHRM0721",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "登录",
+			"item": [
+				{
+					"name": "ihrm-login-API001登录成功",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9bee841b-8640-4bb5-82f2-cfe9bf930a2e",
+								"exec": [
+									"// 断言响应状态码为200\r",
+									"pm.test(\"断言响应状态码为200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// 断言响应消息 success=true\r",
+									"pm.test(\"断言响应消息 success=true\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.success).to.eql(true);\r",
+									"});\r",
+									"\r",
+									"// 断言响应消息 code=10000\r",
+									"pm.test(\"断言响应消息 code=10000\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.code).to.eql(10000);\r",
+									"});\r",
+									"\r",
+									"// 断言响应消息 message=\"操作成功！\"\r",
+									"pm.test(\"断言响应消息 message='操作成功！'\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.message).to.eql(\"操作成功！\");\r",
+									"});\r",
+									"\r",
+									"// 保留并处理token数据，解决后续接口登录态依赖性问题\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.environment.set(\"e_token\", \"Bearer \" + jsonData.data);\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"mobile\":\"13800000002\",\"password\":\"123456\"}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/sys/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"sys",
+								"login"
+							]
+						},
+						"description": "用例编号+用例名称"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "员工管理",
+			"item": [
+				{
+					"name": "添加员工",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9b846cba-e116-4316-96de-6476203ed0d6",
+								"exec": [
+									"// 断言响应状态码为200\r",
+									"pm.test(\"断言响应状态码为200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"// 断言响应消息 success=true\r",
+									"pm.test(\"断言响应消息 success=true\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.success).to.eql(true);\r",
+									"});\r",
+									"\r",
+									"// 断言响应消息 code=10000\r",
+									"pm.test(\"断言响应消息 code=10000\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.code).to.eql(10000);\r",
+									"});\r",
+									"\r",
+									"// 断言响应消息 message=\"操作成功！\"\r",
+									"pm.test(\"断言响应消息 message='操作成功！'\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.message).to.eql(\"操作成功！\");\r",
+									"});\r",
+									"\r",
+									"// 保留并处理员工ID数据，解决后续接口员工ID依赖性问题\r",
+									"var jsonData = pm.response.json();\r",
+									"pm.environment.set(\"e_emp_id\", jsonData.data.id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{e_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"username\":\"jack0722t003\",\r\n\"mobile\":\"13212332663\",\r\n\"timeOfEntry\":\"2020-07-09\",\r\n\"formOfEmployment\":1,\r\n\"workNumber\":\"100072203\",\r\n\"departmentName\":\"销售\",\r\n\"departmentId\":\"1266699057968001024\",\r\n\"correctionTime\":\"2020-07-30T16:00:00.000Z\"\r\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/sys/user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"sys",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "查询员工",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{e_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/sys/user/{{e_emp_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"sys",
+								"user",
+								"{{e_emp_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "修改员工",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "{{e_token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"rose0721\"}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/sys/user/{{e_emp_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"sys",
+								"user",
+								"{{e_emp_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "删除员工",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{e_token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/sys/user/{{e_emp_id}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"sys",
+								"user",
+								"{{e_emp_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

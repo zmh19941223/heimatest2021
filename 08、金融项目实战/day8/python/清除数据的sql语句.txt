@@ -1,0 +1,43 @@
+Jmeter脚本清除数据：
+select * from mb_member WHERE phone = '13099991111' or phone = '13099991112' or phone = '13099991113' or phone = '13099991120';
+
+select * from mb_member_info i INNER JOIN mb_member m on i.member_id = m.id WHERE m.phone = '13099991111' or m.phone = '13099991112' or m.phone = '13099991113' or m.phone = '13099991120';
+
+
+select * from mb_member_login_log i INNER JOIN mb_member m on i.member_id = m.id WHERE m.phone = '13099991111' or m.phone = '13099991112' or m.phone = '13099991113' or m.phone = '13099991120';
+
+select * from mb_member_register_log where phone = '13099991111' or phone = '13099991112' or phone = '13099991113' or phone = '13099991120';
+
+
+删除：
+delete from mb_member_register_log where phone = '13099991111' or phone = '13099991112' or phone = '13099991113' or phone = '13099991120';
+
+delete i.* from mb_member_login_log i INNER JOIN mb_member m on i.member_id = m.id WHERE m.phone = '13099991111' or m.phone = '13099991112' or m.phone = '13099991113' or m.phone = '13099991120';
+
+delete i.* from mb_member_info i INNER JOIN mb_member m on i.member_id = m.id WHERE m.phone = '13099991111' or m.phone = '13099991112' or m.phone = '13099991113' or m.phone = '13099991120';
+
+delete from mb_member WHERE phone = '13099991111' or phone = '13099991112' or phone = '13099991113' or phone = '13099991120';
+
+
+
+P2P代码自动化脚本数据清除：
+select * from mb_member WHERE phone in ('13088881111','13088881112','13088881113','13088881114');
+
+select * from mb_member_info i INNER JOIN mb_member m on i.member_id = m.id WHERE m.phone in ('13088881111','13088881112','13088881113','13088881114');
+
+select * from mb_member_login_log i INNER JOIN mb_member m on i.member_id = m.id WHERE m.phone in ('13088881111','13088881112','13088881113','13088881114');
+
+select * from mb_member_register_log where phone in ('13088881111','13088881112','13088881113','13088881114');
+
+删除：
+delete from mb_member_register_log where phone in ('13088881111','13088881112','13088881113','13088881114');
+
+delete i.* from mb_member_login_log i INNER JOIN mb_member m on i.member_id = m.id WHERE m.phone in ('13088881111','13088881112','13088881113','13088881114');
+
+delete i.* from mb_member_info i INNER JOIN mb_member m on i.member_id = m.id WHERE m.phone in ('13088881111','13088881112','13088881113','13088881114');
+
+delete from mb_member WHERE phone in ('13088881111','13088881112','13088881113','13088881114');
+
+
+
+

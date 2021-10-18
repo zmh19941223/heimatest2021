@@ -1,0 +1,20 @@
+{
+  "user_no_exist": {
+    "username": "13711111234",
+    "password": "123456",
+    "code": "8888",
+    "expect": "账号不存在"
+  },
+  "password_error": {
+    "username": "13012345678",
+    "password": "123456",
+    "code": "8888",
+    "expect": "密码错误"
+  },
+  "username_is_none": {
+    "username": " ",
+    "password": "123456",
+    "code": "8888",
+    "expect": "用户名不能为空"
+  }
+}

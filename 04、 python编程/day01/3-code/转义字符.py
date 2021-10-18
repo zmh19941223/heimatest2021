@@ -1,0 +1,6 @@
+print("我\t你")
+print("我\n你")
+print("我\\你")
+print("我\"你")
+print("我\'你")
+print(r"我\n你")

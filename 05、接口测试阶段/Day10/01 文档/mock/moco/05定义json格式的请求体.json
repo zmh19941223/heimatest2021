@@ -1,0 +1,19 @@
+[
+  {
+    "description": "登录",
+    "request": {
+      "uri": "/login",
+      "method": "post",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "json": {
+        "username": "tom",
+        "password": "123456"
+      }
+    },
+    "response": {
+      "text": "hello world66666"
+    }
+  }
+]

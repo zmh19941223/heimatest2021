@@ -1,0 +1,2 @@
+2020-08-05 16:17:30,268 INFO [root] [__init__.py(<module>:12)] - 测试在api下的__init__.py中的日志打印结果！
+2020-08-05 16:17:30,887 INFO [root] [test_ego.py(test07_get_token:74)] - 获取的token为：{'token': '7d9aad58b807468296e342fa8c06ec73'}

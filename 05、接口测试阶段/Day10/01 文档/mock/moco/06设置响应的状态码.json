@@ -1,0 +1,12 @@
+[
+  {
+    "description": "首页",
+    "request": {
+      "uri": "/index2"
+    },
+    "response": {
+      "status": 500,
+      "text": "error"
+    }
+  }
+]

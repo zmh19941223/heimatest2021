@@ -1,0 +1,12 @@
+[
+  {
+    "description": "首页",
+    "request": {
+      "uri": "/index",
+      "method": "post"
+    },
+    "response": {
+      "text": "post请求的hello world"
+    }
+  }
+]

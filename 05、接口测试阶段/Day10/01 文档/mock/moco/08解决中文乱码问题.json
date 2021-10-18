@@ -1,0 +1,21 @@
+[
+  {
+    "description": "登录",
+    "request": {
+      "uri": "/login"
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json;charset=gbk"
+      },
+      "json": {
+        "code": "10000",
+        "msg": "操作成功",
+        "data": {
+          "uid": 2,
+          "token": "xxx"
+        }
+      }
+    }
+  }
+]

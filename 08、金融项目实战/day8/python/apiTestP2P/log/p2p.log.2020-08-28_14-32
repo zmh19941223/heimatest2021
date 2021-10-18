@@ -1,0 +1,30 @@
+2020-08-28 14:22:13,350 INFO [root] [__init__.py(<module>:5)] - info
+2020-08-28 14:22:13,351 ERROR [root] [__init__.py(<module>:6)] - error
+2020-08-28 14:23:35,604 INFO [root] [__init__.py(<module>:5)] - info
+2020-08-28 14:23:35,604 ERROR [root] [__init__.py(<module>:6)] - error
+2020-08-28 14:23:35,739 INFO [root] [approve.py(test01_approve_success:25)] - login response = {'status': 200, 'description': '登录成功'}
+2020-08-28 14:24:07,658 INFO [root] [__init__.py(<module>:5)] - info
+2020-08-28 14:24:07,658 ERROR [root] [__init__.py(<module>:6)] - error
+2020-08-28 14:24:07,795 INFO [root] [approve.py(test01_approve_success:25)] - login response = {'status': 200, 'description': '登录成功'}
+2020-08-28 14:26:10,583 INFO [root] [__init__.py(<module>:5)] - info
+2020-08-28 14:26:10,583 ERROR [root] [__init__.py(<module>:6)] - error
+2020-08-28 14:26:10,706 INFO [root] [approve.py(test02_approve_realname_is_null:38)] - login response = {'status': 200, 'description': '登录成功'}
+2020-08-28 14:26:45,716 INFO [root] [__init__.py(<module>:5)] - info
+2020-08-28 14:26:45,716 ERROR [root] [__init__.py(<module>:6)] - error
+2020-08-28 14:26:45,830 INFO [root] [approve.py(test02_approve_realname_is_null:38)] - login response = {'status': 200, 'description': '登录成功'}
+2020-08-28 14:26:45,888 INFO [root] [approve.py(test02_approve_realname_is_null:44)] - approve response = {'status': 200, 'data': {'card_id': '110****995', 'realname': '张**'}, 'description': '提交成功!'}
+2020-08-28 14:28:00,236 INFO [root] [__init__.py(<module>:5)] - info
+2020-08-28 14:28:00,236 ERROR [root] [__init__.py(<module>:6)] - error
+2020-08-28 14:28:00,349 INFO [root] [approve.py(test02_approve_realname_is_null:40)] - login response = {'status': 200, 'description': '登录成功'}
+2020-08-28 14:28:00,400 INFO [root] [approve.py(test02_approve_realname_is_null:46)] - approve response = {'description': 'String index out of range: 1', 'status': 100}
+2020-08-28 14:29:54,216 INFO [root] [__init__.py(<module>:5)] - info
+2020-08-28 14:29:54,216 ERROR [root] [__init__.py(<module>:6)] - error
+2020-08-28 14:29:54,337 INFO [root] [approve.py(test03_approve_cardId_is_null:54)] - login response = {'status': 200, 'description': '登录成功'}
+2020-08-28 14:29:54,392 INFO [root] [approve.py(test03_approve_cardId_is_null:60)] - approve response = {'description': 'String index out of range: 1', 'status': 100}
+2020-08-28 14:32:04,902 INFO [root] [__init__.py(<module>:5)] - info
+2020-08-28 14:32:04,902 ERROR [root] [__init__.py(<module>:6)] - error
+2020-08-28 14:32:05,035 INFO [root] [approve.py(test04_get_approve:68)] - login response = {'status': 200, 'description': '登录成功'}
+2020-08-28 14:32:16,107 INFO [root] [__init__.py(<module>:5)] - info
+2020-08-28 14:32:16,107 ERROR [root] [__init__.py(<module>:6)] - error
+2020-08-28 14:32:16,223 INFO [root] [approve.py(test04_get_approve:68)] - login response = {'status': 200, 'description': '登录成功'}
+2020-08-28 14:32:16,272 INFO [root] [approve.py(test04_get_approve:72)] - approve response = {'is_email_open': '-1', 'lastlogin_time': '1598596321', 'group_status': '', 'is_auth_user': '-1', 'is_realname_open': '2', 'is_corp': '-1', 'business_license': '', 'card_id': '110****995', 'realname': '张**', 'isCert': '2', 'realname_card': '1', 'pay_pwd': '', 'phone': '130****7711', 'realname_status': '-2', 'trustType': 'chinapnr', 'pwd': '1', 'email': '', 'is_trust': '-1'}

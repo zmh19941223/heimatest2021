@@ -1,0 +1,10 @@
+2020-07-13 10:41:54,937 INFO [root] [test_publish_article.py(test_login:31)] - 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123
+2020-07-13 11:08:58,303 INFO [root] [test_publish_article.py(test_login:29)] - 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123
+2020-07-13 11:09:44,912 INFO [root] [test_publish_article.py(test_login:29)] - 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123
+2020-07-13 11:17:38,047 INFO [root] [test_publish_article.py(test_login:29)] - 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123
+2020-07-13 11:37:55,396 INFO [root] [test_publish_article.py(test_login:29)] - 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123
+2020-07-13 11:49:12,719 INFO [root] [test_publish_article.py(test_login:29)] - 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123
+2020-07-13 12:00:41,554 INFO [root] [test_publish_article.py(test_login:31)] - 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123
+2020-07-13 14:06:56,736 INFO [root] [test_publish_article.py(test_login:32)] - 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123
+2020-07-13 14:08:04,872 INFO [root] [test_publish_article.py(test_login:32)] - 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123
+2020-07-13 16:41:09,008 INFO [root] [test_publish_article.py(test_login:32)] - 用例的数据如下：用户名：13012345678， 验证码：246810， 预期结果：test123

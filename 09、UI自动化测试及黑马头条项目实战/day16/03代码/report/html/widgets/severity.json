@@ -1,0 +1,21 @@
+[ {
+  "uid" : "122a673b0f11f659",
+  "name" : "test_publish_article",
+  "time" : {
+    "start" : 1594620486331,
+    "stop" : 1594620491705,
+    "duration" : 5374
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "71d0674c71938b7d",
+  "name" : "test_login[13012345678-246810-test123]",
+  "time" : {
+    "start" : 1594620484873,
+    "stop" : 1594620486325,
+    "duration" : 1452
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]

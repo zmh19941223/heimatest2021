@@ -1,0 +1,16 @@
+[
+  {
+    "description": "首页",
+    "request": {
+      "uri": "/index",
+      "method": "get",
+      "queries": {
+        "area": "010",
+        "kw": "hello"
+      }
+    },
+    "response": {
+      "text": "query params: hello world"
+    }
+  }
+]
